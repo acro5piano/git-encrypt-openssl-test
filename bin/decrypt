@@ -1,3 +1,5 @@
 #!/bin/bash
 
-cat | openssl aes-256-cbc -base64 -k hoge -d
+echo $1
+
+openssl aes-256-cbc -d -base64 -aes-256-cbc -pass $PASS_FIXED -in "$1" 2> /dev/null || cat "$1"
