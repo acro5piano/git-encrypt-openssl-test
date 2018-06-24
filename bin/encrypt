@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat | openssl aes-256-cbc -base64 -k hoge -e
