@@ -1,0 +1,3 @@
+#!/bin/bash
+
+openssl aes-256-cbc -base64 -S ab25 -kfile kfile -e
